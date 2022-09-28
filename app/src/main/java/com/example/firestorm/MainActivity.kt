@@ -26,10 +26,10 @@ class MainActivity : AppCompatActivity() {
         btnCad.setOnClickListener {
             // Create a new user with a first and last name
             val user = hashMapOf(
-                "nome" to edtNome.toString(),
-                "endereco" to edtEndereco.toString(),
-                "bairro" to edtBairro.toString(),
-                "cep" to edtCep.toString(),
+                "nome" to edtNome.text.toString(),
+                "endereco" to edtEndereco.text.toString(),
+                "bairro" to edtBairro.text.toString(),
+                "cep" to edtCep.text.toString(),
             )
 
             // Add a new document with a generated ID

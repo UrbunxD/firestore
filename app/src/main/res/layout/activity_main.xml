@@ -8,30 +8,41 @@
     android:layout_gravity="center_vertical"
     android:orientation="vertical">
 
+    <TextView
+        android:text="@string/app_name"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"/>
+
     <EditText
         android:id="@+id/edtNome"
-        android:text="@string/app_name"
+        android:hint="@string/edtNome"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/edtEndereco"
-        android:text="@string/edtEndereco"
+        android:hint="@string/edtEndereco"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
     <EditText
         android:id="@+id/edtBairro"
-        android:text="@string/edtBairro"
+        android:hint="@string/edtBairro"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
     <EditText
         android:id="@+id/edtCep"
-        android:text="@string/edtCep"
+        android:hint="@string/edtCep"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
     <Button
         android:id="@+id/btnCadastro"
         android:text="@string/Cad"
