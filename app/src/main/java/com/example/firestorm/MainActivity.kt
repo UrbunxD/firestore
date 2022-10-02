@@ -1,6 +1,7 @@
 package com.example.firestorm
 
 import android.content.ContentValues.TAG
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         val db = Firebase.firestore
 
         val edtNome: EditText = findViewById(R.id.edtNome)
@@ -22,6 +24,13 @@ class MainActivity : AppCompatActivity() {
         val edtBairro: EditText = findViewById(R.id.edtBairro)
         val edtCep: EditText = findViewById(R.id.edtCep)
         val btnCad: Button = findViewById(R.id.btnCadastro)
+        val btnList: Button = findViewById(R.id.btnListar)
+
+
+        btnList.setOnClickListener{
+            openNextActivity()
+        }
+
 
         btnCad.setOnClickListener {
             // Create a new user with a first and last name
@@ -47,5 +56,9 @@ class MainActivity : AppCompatActivity() {
                     Log.w(TAG, "Error adding document", e)
                 }
         }
+    }
+    private fun openNextActivity() {
+        val intent = Intent(this, Listar()::class.java)
+        startActivity(intent)
     }
 }

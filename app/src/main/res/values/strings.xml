@@ -5,4 +5,5 @@
     <string name="edtBairro">Digite o seu bairro</string>
     <string name="edtCep">Digite o seu CEP</string>
     <string name="Cad">Cadastrar</string>
+    <string name="Lis">Listar</string>
 </resources>
