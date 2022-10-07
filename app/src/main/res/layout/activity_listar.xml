@@ -1,9 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Listar">
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de Dados"
+        android:fontFamily="sans-serif-black"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"/>
+
+    <TableLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <TableRow>
+            <EditText
+                android:id="@+id/edtPesq"
+                android:hint="Insira o Id:"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"/>
+            <Space
+                android:layout_width="40dp"/>
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Buscar"/>
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:text="Registros:"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/txtResultId"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/txtResultNome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/txtResultEnd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/txtResultBairro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/txtResultCep"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"/>
+    </TableLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Atualizar Dados"/>
+    <Button
+        android:id="@+id/btnExcluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Excluir Registro"/>
+</LinearLayout>
