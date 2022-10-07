@@ -8,8 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lista de Dados"
-        android:fontFamily="sans-serif-black"
+        android:text="Listar Dados"
         android:layout_gravity="center_horizontal"
         android:textSize="25dp"/>
 
@@ -38,7 +37,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="sans-serif-black"
             android:textAlignment="center"
             android:text="Registros:"
             android:textSize="15dp"/>
@@ -49,7 +47,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="sans-serif"
             android:textAlignment="center"/>
 
         <EditText
@@ -57,7 +54,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="sans-serif"
             android:textAlignment="center"/>
 
         <EditText
@@ -65,7 +61,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="sans-serif"
             android:textAlignment="center"/>
 
         <EditText
@@ -73,7 +68,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="sans-serif"
             android:textAlignment="center"/>
 
         <EditText
@@ -81,7 +75,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="sans-serif"
             android:textAlignment="center"/>
     </TableLayout>
     <Space
@@ -100,4 +93,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Excluir Registro"/>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Voltar"/>
 </LinearLayout>

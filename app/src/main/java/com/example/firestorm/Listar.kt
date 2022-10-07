@@ -1,6 +1,7 @@
 package com.example.firestorm
 
 import android.content.ContentValues.TAG
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -27,6 +28,12 @@ class Listar : AppCompatActivity() {
         val txtResultCep: TextView = findViewById(R.id.txtResultCep)
         val btnExcluir: Button = findViewById(R.id.btnExcluir)
         val btnEDitar: Button = findViewById(R.id.btnEditar)
+        val btnMain: Button = findViewById(R.id.btnVoltar)
+
+
+        btnMain.setOnClickListener{
+            openNextActivity()
+        }
 
         db.collection("cadastro")
             .get()
@@ -92,4 +99,9 @@ class Listar : AppCompatActivity() {
             Toast.makeText(this,"Atualizado com Sucesso!", Toast.LENGTH_SHORT).show()
         }
     }
+    private fun openNextActivity() {
+        val intent = Intent(this, MainActivity()::class.java)
+        startActivity(intent)
+    }
+
 }
